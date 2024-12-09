@@ -1,24 +1,378 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Infosec Challenges</title>
-    <meta name="" content="Free Code Camp - Infosec Challenges">
-    <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crash Aid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
   </head>
-
   <body>
-    <header>
-      <h1>
-        4. Free Code Camp - Applied InfoSec Challenges
-      </h1>
-    </header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            Crash Aid
+          </a>
+        </div>
 
-    <main>
-    </main>
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#how-it-works">How It Works</a>
+            </li>
+            <li>
+              <a class="btn" href="get_a_quote.html"> <i class="fas fa-money-check"></i>Get A Quote</a>
+            </li>
+            <li>
+              <a class="btn" href="login.html"> <i class="fas fa-user"></i> Log In/Register </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Hamburger Button -->
+        <button class="hamburger-button">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </button>
+        <div class="mobile-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#how-it-works">How It Works</a>
+            </li>
+            <li>
+              <a class="btn" href="#"><i class="fas fa-money-check"></i>Get A Quote</a>
+            </li>
+            <li>
+              <a class="btn" href="#"> <i class="fas fa-user"></i> Login/Register </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-image">
+            <h1 class="hero-heading text-xxl">
+              Crash Aid
+            </h1>
+            <h3 class="hero-text text-xl">
+              Fast accident warning because every second matters.
+            </h3>
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary">Get Started</a>
+              <!--<a href="#" class="btn"
+                ><i class="fas fa-mobile"></i> Available for mobile</a
+              >
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Video Section -->
+    <section class="video bg-black">
+      <div class="container-sm">
+        <h2 class="video-heading text-xl ">
+          Immediate emergency response
+        </h2>
+        <p class=" text-md">
+          Crash Alert is a rapid response alert system that enables faster notifications and emergency reactions in your time of need. The system reacts in the event of vehicle accidents, through the real-time analysis of telematics data and our 24/7 emergency support centre.
+        </p>
+        <div class="video-content">
+          <a href="#">
+            <img
+              src="images/patient.png"
+              alt="video"
+              class="video-preview"
+            />
+          </a>
 
+          <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="testimonials bg-dark" id="how-it-works">
+      <div class="container-test">
+        <h6 class="testimonials-heading text-lg">
+          Sensors, algorithms and 24/7 support
+        </h6>
+        <p class="testimonials-heading text-md">
+          How telematics saves lives
+        </p>
+        <div class="testimonials-grid">
+          <div class="card">
+            <img src="images/crash-alert-device.png">
+            
+            <h3>
+              Industry-leading hardware
+            </h3>
+            <br>
+            <p></p>
+            <p>
+              The first step is to install a Cartrack telematics unit in your vehicle. Our advanced devices, developed in-house, are equipped with sophisticated sensors that enable data about your vehicle’s speed, location, acceleration and G-force impact to be reliably transmitted to our servers. This data is then securely analysed in real-time for any high-collision events or suspicious behaviour.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="images/crash-alert-immediate-response.png">
+            <h3>
+              Immediate response
+            </h3>
+            <br>
+            <p></p>
+            <p>
+              If an accident occurs, our highly trained support team will promptly contact yourself or any listed emergency contact of your choice. When you indicate that an accident has occurred, we will call emergency services and give them your exact location for the fastest response possible. In the event that you or your emergency contacts cannot be reached, your prior approved emergency services will be dispatched to your location, making sure that you always get the help you need.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="images/crash-alert-analysis.png">
+            <h3>
+              Advanced AI analysis
+            </h3>
+            <br>
+            <p></p>
+            <p>
+              Instant analysis takes place on-board the device when a high-collision event has taken place. Our unit automatically sends your vehicle’s data, including its GPS position, to our 24/7 control room where purposely designed algorithms detect whether a serious accident has occurred, if emergency services are needed or whether it is simply a fender-bender in a car park. This analysis takes place in a matter of seconds, and allows for more precise positioning of the accident.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!--Pricing--> 
+<section class="pricing">
+  <div class="container-sm">
+    <h3 class="pricing-heading text-xl text-center">Pricing</h3>
+    <p class="pricing-subheading text-md text-center">
+      Start protecting your vehicle for free and scale as needed. No hidden fees. Unlimited users for free.
+    </p>
+    <div class="pricing-grid">
+      
+      <!-- Simple Plan -->
+      <div class="card bg-light">
+        <div class="pricing-card-header">
+          <h4 class="pricing-heading text-xl">Basic</h4>
+          <p class="pricing-card-subheading">
+            Perfect for individual drivers or small vehicle fleets.
+          </p>
+          <p class="pricing-card-price">
+            <span class="text-xl">Free</span>
+            *No credit card required
+          </p>
+        </div>
+        <div class="pricing-card-body">
+          <ul>
+            <li><i class="fas fa-check"></i> Accident detection alerts</li>
+            <li><i class="fas fa-check"></i> Immediate emergency notification</li>
+            <li><i class="fas fa-check"></i> 24/7 monitoring support</li>
+            <li><i class="fas fa-check"></i> Basic accident report</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="card bg-black">
+        <div class="pricing-card-header">
+          <h4 class="pricing-card-heading text-xl">Premium</h4>
+          <p class="pricing-card-subheading">
+            Designed for frequent drivers or vehicle fleets that need additional features and real-time data.
+          </p>
+          <p class="pricing-card-price">
+            <span class="text-xl">$49</span> /month
+          </p>
+        </div>
+        <div class="pricing-card-body">
+          <p>Everything from the Basic plan plus:</p>
+          <ul>
+            <li><i class="fas fa-check"></i> Real-time vehicle location tracking</li>
+            <li><i class="fas fa-check"></i> Advanced accident reporting and analysis</li>
+            <li><i class="fas fa-check"></i> Monthly vehicle health reports</li>
+            <li><i class="fas fa-check"></i> Driver behavior monitoring</li>
+            <li><i class="fas fa-check"></i> Priority customer support</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <p class="pricing-footer text-center">
+      All prices are in USD and charged per month with applicable taxes
+      added at checkout.
+    </p>
+  </div>
+</section>
+
+
+
+    <!-- FAQ -->
+    <section class="faq bg-light">
+      <div class="container-sm">
+        <h3 class="text-xl text-center">Frequently Asked Questions</h3>
+        <!--<ul class="faq-menu">
+          <li class="active">All</li>
+        </ul>-->
+        <div class="faq-content">
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                What is the Vehicle Accident Emergency Alert System?
+              </h4>
+              <i class="fas fa-minus"></i>
+            </div>
+            <div class="faq-group-body open">
+              <p>
+                It's a system designed to automatically detect car accidents, pinpoint the location, and send immediate alerts to emergency services and pre-determined contacts.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                How will this system reduce accidents? 
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                While the primary focus is on post-accident response, the system can also contribute to accident prevention by encouraging safer driving habits.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                How will this system impact emergency services?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                It will significantly improve response times and efficiency for emergency services.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Can the system detect different types of accidents (e.g., rollover, rear-end collision)?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Yes, the system is engineered to detect a wide range of accident types, including rollovers, rear-end collisions, and side impacts.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">What happens if the system sends a false alert?</h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                The system is designed to minimize false alerts by giving an alert to the driver and waiting for them to cancel the report if it is a false alarm.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Is my personal data protected?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                We prioritize data privacy. Your personal information is securely stored and protected in accordance with data protection regulations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-black">
+      <div class="container-test">
+        <div class="footer-grid">
+          <div>
+            <!--<a href="index.html">
+              <img src="images/logos-white.png" alt="logo" />
+            </a>-->
+          <!--<div class="card">
+              <h4>Subscribe to Newsletter</h4>
+              <p class="text-sm">
+                Subscribe now to receive notifications on road accidents near you.
+              </p>
+              <form>
+                <input type="email" id="email" placeholder="Enter your email" />
+                <button type="submit" class="btn btn-primary btn-block">
+                  Subscribe
+                </button>
+              </form>
+            </div>-->
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Product</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="https://careers.un.org/">United Nations</a></li>
+              <li><a href="https://www.globalroadsafetyfacility.org/">Global Road Safety Facility</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <a href="#">hello@crashaid.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
